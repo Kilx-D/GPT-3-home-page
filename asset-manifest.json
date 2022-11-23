@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Kilx-D/GPT-3-home-page/static/css/main.a367d8eb.css",
+    "main.js": "/Kilx-D/GPT-3-home-page/static/js/main.6e73155b.js",
+    "static/js/787.b3b0db2b.chunk.js": "/Kilx-D/GPT-3-home-page/static/js/787.b3b0db2b.chunk.js",
+    "static/media/badapple.mp4": "/Kilx-D/GPT-3-home-page/static/media/badapple.7af5eaf76b57b6d880f2.mp4",
+    "static/media/ai.png": "/Kilx-D/GPT-3-home-page/static/media/ai.aa60586ba1ba53762d94.png",
+    "static/media/possibility.png": "/Kilx-D/GPT-3-home-page/static/media/possibility.525f13b61a2157d44de0.png",
+    "static/media/blog01.png": "/Kilx-D/GPT-3-home-page/static/media/blog01.cefc0932eae0d33a0342.png",
+    "static/media/blog03.png": "/Kilx-D/GPT-3-home-page/static/media/blog03.d922323861096f25274f.png",
+    "static/media/blog04.png": "/Kilx-D/GPT-3-home-page/static/media/blog04.742c1357e7b6c11078e6.png",
+    "static/media/blog05.png": "/Kilx-D/GPT-3-home-page/static/media/blog05.bfaa1c1e3851158e0e1f.png",
+    "static/media/blog02.png": "/Kilx-D/GPT-3-home-page/static/media/blog02.ab0eb367561796e91532.png",
+    "static/media/people.png": "/Kilx-D/GPT-3-home-page/static/media/people.5cd2d6fbcd48bd63f106.png",
+    "static/media/logo.svg": "/Kilx-D/GPT-3-home-page/static/media/logo.5114679faa0cce74946769ded97f1c89.svg",
+    "index.html": "/Kilx-D/GPT-3-home-page/index.html",
+    "main.a367d8eb.css.map": "/Kilx-D/GPT-3-home-page/static/css/main.a367d8eb.css.map",
+    "main.6e73155b.js.map": "/Kilx-D/GPT-3-home-page/static/js/main.6e73155b.js.map",
+    "787.b3b0db2b.chunk.js.map": "/Kilx-D/GPT-3-home-page/static/js/787.b3b0db2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a367d8eb.css",
+    "static/js/main.6e73155b.js"
+  ]
+}
