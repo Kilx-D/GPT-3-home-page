@@ -1,0 +1,225 @@
+@import "reset";
+
+
+//for the main  navbar element
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+
+
+
+
+//for the navbar links
+.gpt3__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+
+
+//for the logo on the navbar
+.gpt3__navbar-links_logo {
+    margin-right: 2rem;
+
+
+    //the navbar image logo dimensions
+    img {
+        width: 62.56px;
+        height: 16.02px;
+    }
+}
+
+
+
+
+
+
+//the container for the links
+//when displayed on bigger devices
+//which is usually next to the logo
+.gpt3__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+//for the sign up buttons
+//when displayed normally on large devices
+.gpt3__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+
+
+//text styling for text
+//in links and buttons
+.gpt3__navbar-links_container p,
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu_container p {
+    color: #fff;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+//the styling for the sign in buttons
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ff4820;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+//the toggle menu buttons that show up
+//on smaller devices
+.gpt3__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+
+
+    svg {
+        cursor: pointer;
+    }
+
+
+    //the styling of the popup
+    //menu and how it should look
+    &_container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: end;
+        background: $color-footer;
+        padding: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        margin-top: 1rem;
+        min-width: 210px;
+        border-radius: 5px;
+        box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+        //gives the links
+        //text on the little menu
+        //space between each other vertically
+        p {
+            margin: 1rem 0;
+
+        }
+
+
+        //prevents the sign in buttons on the menu
+        //appear when on large devices
+        //but repear on smaller devices with media queries
+        &-links-sign {
+            display: none;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+//small laptop size
+@include desktop {
+
+    //when the the device is at a certain size
+    //the normal display of links will stop showing
+    .gpt3__navbar-links_container {
+        display: none;
+    }
+
+    //makes the menu icons appear
+    //allowing the usage of the popup menu
+    .gpt3__navbar-menu {
+        display: flex;
+    }
+}
+
+
+//tablet size
+@include tablet {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+
+
+}
+
+
+
+//phone size
+@include phone {
+    .gpt3__navbar {
+        padding: 2rem;
+
+
+        //removes the normal display of sign up button
+        //when the size is at around a phone
+        &-sign {
+            display: none;
+        }
+
+
+        &-menu_container {
+            //moves the popup menu down a little
+            top: 20px;
+
+
+
+            //displays the sign up buttons in the popup menu
+            //when at phone size
+            &-links-sign {
+                display: block;
+            }
+        }
+    }
+
+
+
+}

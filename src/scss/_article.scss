@@ -1,0 +1,70 @@
+.gpt3__blog {
+
+
+    &-container {
+
+        &__article {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: $color-footer;
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1rem 1.5rem;
+                height: 100%;
+
+                p {
+                    font-family: $font-family;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 35px;
+
+                    &:last-child {
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    font-family: $font-family;
+                    font-weight: 800;
+                    line-height: 30px;
+                    font-size: 25px;
+                    color: #fff;
+                    margin-bottom: 5rem;
+                    cursor: pointer;
+                }
+            }
+
+            &-image {
+                width: 100%;
+                height: 100%;
+                background-color: $color-footer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include phone {
+    .gpt3__blog {
+        &-container {
+            &__article {
+                &-content {
+                    h3 {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

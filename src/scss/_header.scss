@@ -1,0 +1,182 @@
+.gpt3__header {
+    display: flex;
+
+
+    &-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 5rem;
+
+        h1 {
+            font-family: $font-family;
+            font-weight: 800;
+            font-size: 3rem;
+            line-height: 75px;
+            letter-spacing: -0.04em;
+        }
+
+        p {
+            font-family: $font-family;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            list-style: 27px;
+            color: $color-text;
+            margin-top: 1.5rem;
+            line-height: 1.6rem;
+
+        }
+
+        &__input {
+            width: 100%;
+            margin: 2rem 0 1rem;
+            display: flex;
+
+            input {
+                flex: 2;
+
+                min-height: 50px;
+                background: $color-footer;
+                border: 2px solid $color-footer;
+                padding: 0 1rem;
+                outline: none;
+                color: #fff;
+                border-radius: 5px 0 0 5px;
+                font-family: $font-family;
+                font-size: 20px;
+                line-height: 27px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            button {
+                background: #ff4820;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                font-family: $font-family;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 27px;
+                color: #fff;
+                flex: 0.6;
+
+                min-height: 50px;
+                cursor: pointer;
+                outline: none;
+                padding: 0 1rem;
+                border: none;
+            }
+
+
+        }
+
+        &__people {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 2rem;
+
+            img {
+                width: 181.79px;
+                height: 38px;
+            }
+
+            p {
+                font-family: $font-family;
+                font-size: 12px;
+                line-height: 38px;
+                color: #fff;
+                margin-left: 1rem;
+                text-align: center;
+                margin: 0 0 0 1rem;
+            }
+        }
+    }
+
+    &-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include desktop {
+    .gpt3__header {
+        flex-direction: column;
+
+        &-content {
+            margin: 0 0 3rem;
+        }
+    }
+}
+
+@include tablet {
+    .gpt3__header {
+        h1 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-content {
+            margin: 0 0 3rem;
+
+            &__people {
+                flex-direction: column;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            input,
+            button {
+                font-size: 16px;
+                line-height: 24px;
+
+            }
+        }
+    }
+}
+
+@include phone {
+    .gpt3__header {
+        h1 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &-content__input {
+
+            input,
+            button {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+#badApple {
+    width: 100%;
+
+}
